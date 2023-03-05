@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 
@@ -10,7 +10,7 @@ using namespace std;
 void main()
 {
 	setlocale(LC_ALL, "Rus");
-	cout << "Ïðèâåò Data Tupes\n";
+	cout << "ÐŸÑ€Ð¸Ð²ÐµÑ‚ Data Tupes\n";
 #if defined LOGACAL_TYPES
 	cout << true << endl;
 	cout << false << endl;
@@ -43,17 +43,17 @@ void main()
 	int c;
 	c = 0;
 	int d;
-	cout << "Ââåäèòå ÷èñëî:" cin >> d;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" cin >> d;
 #endif // DELERATION_AND_INITIALISTION
 
 #ifdef COFFEE
 
 	double price_of_coffe;
 	int number_of_cups;
-	cout << "Ââåäèòå ñòîèìîñòü êîôå: "; cin >> price_of_coffe;
-	cout << "Ââåäèòå ñòîèìîñòü ÷àøåê: "; cin >> number_of_cups;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ ÐºÐ¾Ñ„Ðµ: "; cin >> price_of_coffe;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ‡Ð°ÑˆÐµÐº: "; cin >> number_of_cups;
 	double total_price = price_of_coffe * number_of_cups;
-	cout << "Îáùàÿ ñòîèìîñòü:" << total_price << endl;
+	cout << "ÐžÐ±Ñ‰Ð°Ñ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ:" << total_price << endl;
 
 #endif // COFFEE
 
@@ -61,15 +61,15 @@ void main()
 	const int MAX_SPEED = 250;
 
 
-	//#Ëèòåðàëû
+	//#Ð›Ð¸Ñ‚ÐµÑ€Ð°Ð»Ñ‹
 	cout << .5 << endl;
 	cout << sizeof(.5) << endl;
 	cout << typeid(5.f).name() << endl;
-	//5 - ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'int'
-	//5. - ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'double'
-	//.5 - ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'double'
-	//.5f - ýòî ÷èñëîâàÿ êîíñòàíòà òèïà 'float'
-	//.5ULL - ýòî ÷èñëîâàÿ êîíñòàíòà òèïà '' unsigned long long
+	//5 - ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'int'
+	//5. - ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'double'
+	//.5 - ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'double'
+	//.5f - ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° 'float'
+	//.5ULL - ÑÑ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾Ð²Ð°Ñ ÐºÐ¾Ð½ÑÑ‚Ð°Ð½Ñ‚Ð° Ñ‚Ð¸Ð¿Ð° '' unsigned long long
 
 	cout << sizeof('+') << endl;
 	cout << sizeof("+") << endl;
